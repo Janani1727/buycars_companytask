@@ -42,11 +42,11 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+      <Box bg={useColorModeValue('teal', 'teal')} px={4}>
+        <Flex color={"white"} h={16} alignItems={'center'} justifyContent={'space-between'}>
          
          <Link to="/signup">
-         <Box>Signup</Box>
+         <Box >Signup</Box>
          </Link>
          
 

@@ -5,7 +5,7 @@ import {Routes , Route} from "react-router-dom"
 import Login from "../Components/login"
 import Signup from "../Components/signup"
 import AddCarDetails from '../Components/AddCarDetails'
-import DisplayCar from '../Components/displayCar'
+import DisplayCar from "../Components/DisplayCar"
 
 
 

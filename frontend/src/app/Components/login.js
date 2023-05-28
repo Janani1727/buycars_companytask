@@ -35,13 +35,18 @@ headers:{
 
   return (
     <>
-    <p>Login</p>
+    
 
-    <input type="text" placeholder='Enter your email' name={email} value={email} onChange={(e)=>setEmail(e.target.value)}/>
+    <form style={{padding:"20px",width:"30%",height:"350px" , border:"1px solid black" ,marginTop:"80px",marginLeft:"550px"}}>
+
+
+    <input style={{width:"100%",height:"40px",border:"1px solid black",borderRadius:"10px",marginTop:"20px"}} type="text" placeholder='Enter your email' name={email} value={email} onChange={(e)=>setEmail(e.target.value)}/>
   
-    <input type="text" placeholder='Enter your password' name={password} value={password} onChange={(e)=>setPassword(e.target.value)}/>
+    <input style={{width:"100%",height:"40px",border:"1px solid black",borderRadius:"10px",marginTop:"20px"}} type="text" placeholder='Enter your password' name={password} value={password} onChange={(e)=>setPassword(e.target.value)}/>
 
-    <button onClick={handleSubmit}>Login</button>
+    <button style={{backgroundColor:"teal",color:"white",width:"100%",height:"40px",border:"1px solid black",borderRadius:"10px",marginTop:"20px"}} onClick={handleSubmit}>Login</button>
+
+    </form>
     </>
   )
 }
