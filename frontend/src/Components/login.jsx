@@ -1,9 +1,11 @@
 
+import {useToast}from "@chakra-ui/react"
 
 import React, { useState } from 'react'
+import { Link } from "react-router-dom"
 
 const Login = () => {
-  
+  const Toast =useToast()
     const [email,setEmail] = useState("")
   
     const [password,setPassword] = useState("")
@@ -43,9 +45,20 @@ headers:{
     <input style={{width:"100%",height:"40px",border:"1px solid black",borderRadius:"10px",marginTop:"20px"}} type="text" placeholder='Enter your email' name={email} value={email} onChange={(e)=>setEmail(e.target.value)}/>
   
     <input style={{width:"100%",height:"40px",border:"1px solid black",borderRadius:"10px",marginTop:"20px"}} type="text" placeholder='Enter your password' name={password} value={password} onChange={(e)=>setPassword(e.target.value)}/>
-
-    <button style={{backgroundColor:"teal",color:"white",width:"100%",height:"40px",border:"1px solid black",borderRadius:"10px",marginTop:"20px"}} onClick={handleSubmit}>Login</button>
-
+   <Link to="/displaycar">
+    <button style={{backgroundColor:"teal",color:"white",width:"100%",height:"40px",border:"1px solid black",borderRadius:"10px",marginTop:"20px"}} onClick={()=>
+      {
+        handleSubmit()
+        Toast({
+          title: "logged in successfully",
+          position: "bottom",
+          status: "success",
+          duration: 4000,
+          isClosable: true,
+        });
+      }
+    }>Login</button>
+  </Link>
     </form>
     </>
   )

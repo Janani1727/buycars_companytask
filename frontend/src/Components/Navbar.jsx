@@ -43,7 +43,7 @@ export default function Navbar() {
   return (
     <>
       <Box bg={useColorModeValue('teal', 'teal')} px={4}>
-        <Flex color={"white"} h={16} alignItems={'center'} justifyContent={'space-between'}>
+        <Flex fontSize={"20px"} color={"white"} h={16} alignItems={'center'} justifyContent={'space-evenly'}>
          
          <Link to="/signup">
          <Box >Signup</Box>

@@ -6,6 +6,7 @@ import Login from "../Components/login"
 import Signup from "../Components/signup"
 import AddCarDetails from '../Components/AddCarDetails'
 import DisplayCar from "../Components/DisplayCar"
+import Homepage from '../Components/Homepage'
 
 
 
@@ -14,7 +15,7 @@ const Allroutes = () => {
     <div>
 
 <Routes>
-
+<Route path ="/" element={<Homepage/>}/>
 <Route path ="/signup" element={<Signup/>}/>
 <Route path ="/login" element={<Login/>}/>
 <Route path ="/addcar" element={<AddCarDetails/>}/>
