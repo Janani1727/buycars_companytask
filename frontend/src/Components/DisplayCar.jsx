@@ -1,3 +1,5 @@
+
+
 import React, { useEffect, useState } from "react";
 import {
   Checkbox,
@@ -121,6 +123,10 @@ const DisplayCar = () => {
       })
       .catch((err) => console.log(err));
   };
+
+  // if(typeof window !== undefined){
+
+  // }
 
   const eightfilteredData = async () => {
     let query = document.getElementById("eight").value;
